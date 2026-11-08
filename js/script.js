@@ -44,3 +44,84 @@ if ("IntersectionObserver" in window) {
   }, { rootMargin: "-35% 0px -55% 0px" });
   sections.forEach(section => observer.observe(section));
 }
+
+
+/* =====================================
+   HOME SECTION - UPDATED TYPOGRAPHY
+===================================== */
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.wordmark,
+.main-nav,
+.hero-kicker,
+.eyebrow,
+.mono-note {
+  font-family: 'Space Mono', monospace;
+}
+
+.wordmark {
+  gap: 8px;
+}
+
+.hero {
+  display: flex;
+  min-height: 570px;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero h1 {
+  max-width: 900px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+.hero-summary {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-kicker {
+  margin-top: 34px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+/* Remove old hero illustration and location layout */
+
+.hero-art,
+.hero-bottom {
+  display: none !important;
+}
+
+/* Mobile layout */
+
+@media (max-width: 620px) {
+  .hero {
+    min-height: 0;
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+
+  .hero h1 {
+    font-size: clamp(43px, 12vw, 65px);
+  }
+
+  .hero-summary {
+    font-size: 15px;
+  }
+}
+
