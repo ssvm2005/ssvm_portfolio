@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" data-theme="light">
 <head>
@@ -184,6 +183,8 @@
 
     <div class="project-grid">
 
+      <!-- 01 / TENSORGRID TPU -->
+
       <article class="project-card">
 
         <div class="project-visual visual-tpu">
@@ -200,100 +201,41 @@
             <span>Verification</span>
           </div>
 
-          <h3>Tensor Processing Unit</h3>
+          <h3>TensorGrid – Parameterizable TPU</h3>
 
           <p>
-            IEEE SSCS Chipathon 2026 team project: a parameterizable
-            MAC-array TPU targeting the GF180MCU process, with a UART
-            command interface and pipelined quantizer.
+            IEEE SSCS Chipathon 2026 project targeting GF180MCU. Contributed
+            to verification and physical implementation of an accuracy-aware
+            TPU with a configurable MAC array, multi-precision arithmetic
+            and pipelined quantization.
           </p>
 
-          <a class="project-link" href="https://github.com/ssvm2005"
+          <p class="project-status">
+            Implementation completed · Preparing for fabrication approval
+          </p>
+
+          <a class="project-link"
+            href="https://github.com/KBdeGaulle1803/TensorGrid"
             target="_blank" rel="noreferrer">
-            Find me on GitHub <span>↗</span>
+            View GitHub repository <span>↗</span>
           </a>
 
         </div>
       </article>
 
 
-      <article class="project-card">
-
-        <div class="project-visual visual-noc">
-          <span class="project-index">02</span>
-          <div class="visual-network">
-            <b></b><b></b><b></b><b></b><b></b>
-          </div>
-          <span class="visual-caption">FPGA / SECURE INTERCONNECT</span>
-        </div>
-
-        <div class="project-info">
-
-          <div class="tag-row">
-            <span>FPGA</span>
-            <span>Verilog</span>
-            <span>Security</span>
-          </div>
-
-          <h3>Secure NoC Router</h3>
-
-          <p>
-            A four-port packet router exploring XY routing,
-            quality-of-service handling and hardware access-control checks.
-          </p>
-
-          <a class="project-link" href="https://github.com/ssvm2005"
-            target="_blank" rel="noreferrer">
-            Find me on GitHub <span>↗</span>
-          </a>
-
-        </div>
-      </article>
-
-
-      <article class="project-card">
-
-        <div class="project-visual visual-puf">
-          <span class="project-index">03</span>
-          <div class="visual-wave">
-            <span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span>
-          </div>
-          <span class="visual-caption">SILICON / DEVICE FINGERPRINT</span>
-        </div>
-
-        <div class="project-info">
-
-          <div class="tag-row">
-            <span>Hardware Security</span>
-            <span>Cadence</span>
-            <span>SCL 180nm</span>
-          </div>
-
-          <h3>DFF-based PUF</h3>
-
-          <p>
-            Design and evaluation of a flip-flop-based physical
-            unclonable function for lightweight hardware authentication.
-          </p>
-
-          <a class="project-link" href="https://github.com/ssvm2005"
-            target="_blank" rel="noreferrer">
-            Find me on GitHub <span>↗</span>
-          </a>
-
-        </div>
-      </article>
-
+      <!-- 02 / PHYSIOLOGICAL MONITORING -->
 
       <article class="project-card">
 
         <div class="project-visual visual-iot">
-          <span class="project-index">04</span>
+          <span class="project-index">02</span>
+
           <div class="visual-sensor">
             <span>°</span><i></i><i></i><i></i>
           </div>
-          <span class="visual-caption">ESP32 / SENSOR SYSTEM</span>
+
+          <span class="visual-caption">ESP32 / WEARABLE MONITORING</span>
         </div>
 
         <div class="project-info">
@@ -301,30 +243,121 @@
           <div class="tag-row">
             <span>Embedded</span>
             <span>ESP32</span>
-            <span>IoT</span>
+            <span>Published Patent</span>
           </div>
 
-          <h3>Physiological Monitoring</h3>
+          <h3>Adaptive Multi-Sensor Wearable System</h3>
 
           <p>
-            An ESP32-based monitoring concept combining physiological
-            and environmental inputs with threshold-based risk alerts.
+            Developed a low-power wearable monitoring architecture that
+            adapts sensor sampling across Passive, Active and Emergency
+            states using physiological measurements and threshold-based
+            control. Supports local data logging and a LabVIEW clinical dashboard.
           </p>
 
-          <a class="project-link" href="https://github.com/ssvm2005"
+          <p class="project-status">
+            Paper: A Low-Power Adaptive Multi-Sensor Wearable System for Sleep
+            Monitoring and Physiological Risk Alerts. Patent application published.
+          </p>
+
+          <a class="project-link"
+            href="https://lnkd.in/p/gHCK2uhf"
             target="_blank" rel="noreferrer">
-            Find me on GitHub <span>↗</span>
+            View publication <span>↗</span>
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- 03 / ACCIDENT DETECTION -->
+
+      <article class="project-card">
+
+        <div class="project-visual visual-noc">
+          <span class="project-index">03</span>
+
+          <div class="visual-network">
+            <b></b><b></b><b></b><b></b><b></b>
+          </div>
+
+          <span class="visual-caption">IOT / IMAGE PROCESSING</span>
+        </div>
+
+        <div class="project-info">
+
+          <div class="tag-row">
+            <span>IoT</span>
+            <span>Embedded Systems</span>
+            <span>Image Processing</span>
+          </div>
+
+          <h3>AI-Enabled Accident Detection &amp; Alert System</h3>
+
+          <p>
+            Built an end-to-end accident detection and emergency alert system
+            integrating Arduino-based sensor fusion, GPS tracking, GSM
+            communication and Raspberry Pi-based image processing for
+            accident severity assessment.
+          </p>
+
+          <p class="project-status">
+            My contributions focused on sensor interfacing, firmware
+            development, circuit assembly and PCB design.
+          </p>
+
+          <a class="project-link"
+            href="https://github.com/ssvm2005/AI-Enabled-Accident-Detection-and-Alert-System-Using-IoT-and-Deep-Learning-for-Smart-Cities"
+            target="_blank" rel="noreferrer">
+            View GitHub repository <span>↗</span>
+          </a>
+
+        </div>
+      </article>
+
+
+      <!-- 04 / BUSINESS DATA MANAGEMENT CAPSTONE -->
+
+      <article class="project-card">
+
+        <div class="project-visual visual-puf">
+          <span class="project-index">04</span>
+
+          <div class="visual-wave">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+
+          <span class="visual-caption">DATA / BUSINESS ANALYTICS</span>
+        </div>
+
+        <div class="project-info">
+
+          <div class="tag-row">
+            <span>IIT Madras</span>
+            <span>Python</span>
+            <span>Analytics</span>
+          </div>
+
+          <h3>Measured to Fit – Business Analytics Capstone</h3>
+
+          <p>
+            Analysed tailoring business data for Friendly Fashion using
+            Python-based analytics to identify inventory patterns, profit
+            drivers and seasonal demand trends, supporting data-driven
+            operational decisions.
+          </p>
+
+          <a class="project-link"
+            href="https://lnkd.in/p/gTBw2gm2"
+            target="_blank" rel="noreferrer">
+            View project <span>↗</span>
           </a>
 
         </div>
       </article>
 
     </div>
-
-    <p class="work-footnote">
-      Project links currently point to my GitHub profile.
-      Individual repository links can be added as each project is published.
-    </p>
 
   </section>
 
